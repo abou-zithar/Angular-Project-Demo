@@ -1,0 +1,37 @@
+<section class="mt-5">
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-6 position-relative my-2">
+      <img src="../../assets/images/homeImg.jpg" class="w-100"  alt="symptom">
+      <p class="position-absolute top-0 p-5">We Care About Your Health</p>
+    </div>
+
+
+    <div class="col-md-6 my-2">
+      <form (ngSubmit)="submitLogin(loginForm)" [formGroup]="loginForm" >
+
+      <input type="email" placeholder="Enter your Email" class="form-control mb-3" formControlName="email">
+      <div  *ngIf="loginForm.get('email')?.errors && loginForm.get('email')?.touched" class=" alert-danger">
+        <p  *ngIf="loginForm.get('email')?.errors?.['required']" class="mb-0">email is required</p>
+        <p  *ngIf="loginForm.get('email')?.errors?.['email']" class="mb-0"> email invalid </p>
+      </div>
+
+      <input type="password" placeholder="Enter your password" class="form-control mb-3" formControlName="password">
+      <div *ngIf="loginForm.get('password')?.errors && loginForm.get('password')?.touched" class="alert alert-danger ">
+        <p  *ngIf="loginForm.get('password')?.errors?.['required']" class="mb-0">password is required</p>
+       
+
+      </div>
+      <button [disabled]="loginForm.invalid" type="submit" class="btn px-5 py-3 ">Login</button>
+
+      <div *ngIf="error"   class="alert-danger text-center mt-2"><h6>{{error}}</h6></div>
+
+    </form>
+    </div>
+
+  </div>
+
+</div>
+</section>
