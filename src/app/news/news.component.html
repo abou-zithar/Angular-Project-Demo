@@ -1,0 +1,48 @@
+
+
+
+
+    <div class="container">
+    <div class="row py-4">
+        <div class="col-md-4">
+            <div class="brdr w-25 my-3"></div>
+            <h2 class="my-3">News about medical <br> at US to read right now</h2>
+            <p class="text-muted">News about medical <br> at US to read right now</p>
+            <div class="brdr w-25 my-3"></div>
+
+
+        </div>
+
+        <div *ngFor="let news of MedicalNews" class="col-md-2 position-relative">
+            <div class="news">
+                <a [href]="news.url">
+                    <img class="w-100" [src]="news.urlToImage" alt="">
+              <h3 class="h5 fw-bolder color">{{news.title}}</h3>
+              <div class="vote bg-color p-2 fw-bolder position-absolute top-0 start-10 w-75">Author : {{news.author}}</div>
+                </a>
+                
+            </div>
+        </div>
+      </div>
+      <div class="row py-4">
+        <div class="col-md-4">
+            <div class="brdr w-25 my-3"></div>
+            <h2 class="my-3">News about medical <br> at UK to read right now</h2>
+            <p class="text-muted">News about medical <br> at UK to read right now</p>
+            <div class="brdr w-25 my-3"></div>
+
+
+        </div>
+
+        <div *ngFor="let news of MedicalNewsUK" class="col-md-2 position-relative">
+            <div class="news">
+                <a [href]="news.url">
+                    <img class="w-100" [src]="news.urlToImage" alt="">
+                    <h3 class="h5 fw-bolder color">{{news.title}}</h3>
+                    <div class="vote bg-color p-2 fw-bolder position-absolute top-0 start-10 w-75">Author : {{news.author}}</div>
+                </a>
+               
+            </div>
+        </div>
+      </div>
+    </div>
