@@ -1,18 +1,17 @@
-nav
-{
-  border: 0px solid teal;
+
+
+.nav-styel{
+  background-color: var(--secondary);
+  padding: 10px;
+  font-weight: bold;
+}
+.nav-link:focus{
+  background-color: var(--purple);
+  border-radius: 5px;
+  color: white !important;
 
 }
 
-li
-{
-   color: teal;
-   font-size: 20px;
-   font-weight: 800;
+.w-10{
+  width: 10%;
 }
-
-a
-{
-  text-decoration: none;
-}
-

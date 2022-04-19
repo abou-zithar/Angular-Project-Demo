@@ -6,12 +6,8 @@ p
 
 }
 
-section
-{
-  background-color:  teal;
-}
-
 button
 {
-  background-color: #00a8e6;
+  background-color: var(--purple);
+  color: white;
 }

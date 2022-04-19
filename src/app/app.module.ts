@@ -11,6 +11,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NewsComponent } from './news/news.component';
 import { NewsDetailsComponent } from './news-details/news-details.component';
+import { Fo0oterComponent } from './fo0oter/fo0oter.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { NewsDetailsComponent } from './news-details/news-details.component';
     HomeComponent,
     ContactComponent,
     NewsComponent,
-    NewsDetailsComponent
+    NewsDetailsComponent,
+    Fo0oterComponent
   ],
   imports: [
     BrowserModule,
