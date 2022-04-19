@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NewsComponent } from './news/news.component';
 import { NewsDetailsComponent } from './news-details/news-details.component';
 import { Fo0oterComponent } from './fo0oter/fo0oter.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +24,7 @@ import { Fo0oterComponent } from './fo0oter/fo0oter.component';
     NewsComponent,
     NewsDetailsComponent,
     Fo0oterComponent
+    
   ],
   imports: [
     BrowserModule,
